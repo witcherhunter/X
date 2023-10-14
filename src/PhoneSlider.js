@@ -1,4 +1,11 @@
-import one from "./db/nokia/1.jpeg"
+import l1p1 from "./db/phone/1/1.jpg"
+import l2p1 from "./db/phone/2/1.jpg"
+import l4p2 from "./db/phone/4/2.jpg"
+import l4p1 from "./db/phone/4/1.jpg"
+import l5p1 from "./db/phone/5/1.jpg"
+
+
+
 import tow from "./db/nokia/2.jpeg"
 import three from "./db/nokia/3.jpeg"
 import four from "./db/nokia/4.jpeg"
@@ -17,7 +24,7 @@ const phones =[
     'url': 1,
     "id": uuidv4(),
     "title": "Nike Air Monarch IV",
-    "img": one,
+    "img": l1p1,
     "rating": 4.5,
     "price": "199.99",
     "date": "2023-09-06",
@@ -27,7 +34,7 @@ const phones =[
     'url': 2,
     "id": uuidv4(),
     "title": "Nike Air Vapormax Plus",
-    "img": tow,
+    "img": l2p1,
     "rating": 4.2,
     "price": 119.99,
     "date": "2023-08-25",
@@ -37,7 +44,7 @@ const phones =[
     'url': 3,
     "id": uuidv4(),
     "title": "Nike Waffle One Sneaker",
-    "img": three,
+    "img": l4p2,
     "rating": 3.8,
     "price": 139.99,
     "date": "2023-08-15",
@@ -47,7 +54,7 @@ const phones =[
     'url': 4,
     "id": uuidv4(),
     "title": "Nike Running Shoe",
-    "img": four,
+    "img": l4p1,
     "rating": 3.5,
     "price": 79.99,
     "date": "2023-08-10",
@@ -57,7 +64,7 @@ const phones =[
     'url': 5,
     "id": uuidv4(),
     "title": "Flat Slip On Pumps",
-    "img": five,
+    "img": l5p1,
     "rating": 4.7,
     "price": 299.99,
     "date": "2023-07-30",

@@ -198,6 +198,8 @@ function ProductList({ forward, result, handleClick }) {
                                             <Nav className="justify-content-end flex-grow-1 pe-1">
                                                 <button className="product-list-navlink-item my-1" href="related" value="related" onClick={handleClick}>مرتبط ترین</button>
                                                 <button className="product-list-navlink-item my-1" href="most-viewed" value="most-viewed" onClick={handleClick}>پربازدید ترین </button>
+                                                <button className="product-list-navlink-item my-1" href="new" value="new" onClick={(handleClick)}>جدید ترین</button>
+                                                <button className="product-list-navlink-item my-1" href="best-sales" value="best-sales" onClick={handleClick}>پرفروش ترین</button>
                                                 <button className="product-list-navlink-item my-1" href="cheapest" value="cheapest" onClick={handleClick}>ارزان ترین</button>
                                                 <button className="product-list-navlink-item my-1" href="expensive" value="expensive" onClick={handleClick}>گران ترین</button>
                                                {

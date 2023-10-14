@@ -5,6 +5,7 @@ import {NavLink} from "react-router-dom"
 import 'swiper/css';
 import 'swiper/css/navigation';
 import phones from '../PhoneSlider';
+// import {phones} from '../Phone'
 
 import { Navigation } from 'swiper/modules';
 

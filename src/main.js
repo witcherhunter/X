@@ -1,18 +1,7 @@
 import { Fragment, useState } from 'react'
-// import Header from './components/Header'
-// import Footer from './components/Footer'
-// import NavLinks from './components/NavLinks'
-// import Slider from './components/Slider'
-// import InStory from './components/InStory'
-// import ProductSlider from './components/ProductSlider'
-// import ListItem from './components/ListItem'
-// import BrandSlider from './components/BrandSlider'
-// import Logo from './components/Logo'
-// import BestSales from './components/BestSales'
-// import ProductsOffersSlider from './components/ProductsOffersSlider'
 import ProductListItem from "./components/ProductListItem";
 import ProductListLi from './components/ProductListLi'
-// import ReadMore from './components/ReadMore'
+import SignUp from './components/SignUp';
 import { Routes, Route, useLocation } from 'react-router-dom'
 
 
@@ -25,6 +14,7 @@ import {laptops} from './laptop'
 import {tvs} from './tv'
 import {phones} from './Phone'
 import Home from './Home'
+import Login from './components/Login';
 
 function Main({query}) {
 
@@ -93,7 +83,6 @@ function Main({query}) {
     const {pathname} = useLocation();
     
     const catlistarray = pathname.split('/');
-    console.log(catlistarray[catlistarray.length-1]);
     
     let result = null;
 
@@ -104,7 +93,6 @@ function Main({query}) {
     } else if(catlistarray[catlistarray.length-1] == "phones") {
         result = filteredData(phones, selectedCategory, query);
     }
-    console.log(catlistarray[catlistarray.length-1] == "laptops")
     
     return (
             <Fragment>
@@ -119,6 +107,12 @@ function Main({query}) {
                 </Routes>
                 <Routes>
                     <Route path='/list/:catlist/:productId' element={<ProductListLi />} />
+                </Routes>
+                <Routes>
+                    <Route path='/login' element={<Login/>}></Route>
+                </Routes>
+                <Routes>
+                    <Route path='/signup' element={<SignUp/>}></Route>
                 </Routes>
             </Fragment>
     )
